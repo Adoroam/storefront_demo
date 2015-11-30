@@ -1,7 +1,10 @@
 body {
-	font-family: "raleway";
-	
+	font-family: "raleway";	
 }
 a:hover {
 	text-decoration: none;
+}
+.heading {
+	width: 100%;
+	text-align: center;
 }
