@@ -18,10 +18,10 @@
     <body ng-app="ang" ng-controller="MainController">
         <div class="container-fluid">
             <!-- topbar and menu -->
-            <div class="topBar lightBg"><span class="glyphicon glyphicon-menu-hamburger whiteBg menuIcon" ng-click="menuClick();"></span></div>
-            <div class="menu lightBg">
-                <div ng-repeat="x in page | filter : {shoppable: false} : true" >
-                    <a ng-click="menuSel($index)"><h3 class="menuItem">{{ x.entry }}</h3></a>
+            <div class="topBar lightBg darkOl"><span class="glyphicon glyphicon-menu-hamburger whiteBg menuIcon" ng-click="menuClick();"></span></div>
+            <div class="menu lightBg" ng-show="menuShow == true">
+                <div ng-repeat="x in page | filter : {shoppable: false} : true" ng-class="{darkBg: activePage.entry==x.entry, blueOl: activePage.entry==x.entry}">
+                    <a ng-click="menuSel($index)"><h4 class="menuItem whiteTxt">{{ x.entry }}</h4></a>
                 </div>
             </div>
             <!-- end menu -->

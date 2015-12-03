@@ -20,7 +20,19 @@ app.controller('MainController', ['$scope', function($scope) {
         { entry: "Headsets", url: "pages/shopitem.html", head: "Shopping > Headsets", picture: "", shoppable: true},
         { entry: "Monitors", url: "pages/shopitem.html", head: "Shopping > Monitors", picture: "", shoppable: true}
     ];
-    $scope.activePage = $scope.page[1];
+
+    $scope.menuShow = false;
+    $scope.menuClick = function () {
+         if ($scope.menuShow) {
+            $scope.menuShow = false;
+         }  else {$scope.menuShow = true;}
+    };
+    $scope.menuSel = function (index) {
+        $scope.activePage = $scope.page[index];     
+        $scope.menuShow = false;    
+    };
+
+    $scope.activePage = $scope.page[0];
     $scope.activeShop = null;
     $scope.shopSel = function (index) {
         $scope.activePage = $scope.page[index+2];
