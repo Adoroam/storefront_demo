@@ -29,7 +29,7 @@
             </div><!-- end menu -->
             <img src="img/angularpoclogo2.png" class="angularLogo"/><!-- logo -->
             <div class="row darkBg content">  
-                <h2 class="pageHead whiteTxt">{{ activePage.head }}</h2> 
+                <h2 class="pageHead whiteTxt" ng-click="headerClick(activePage);">{{ activePage.head }}</h2> 
                 <div class="content" ng-include='activePage.url' id="content"></div>
             </div>
         </div><!-- end container-fluid -->

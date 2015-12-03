@@ -17,7 +17,7 @@ app.controller('MainController', ['$scope', function($scope) {
         { entry: "Shopping", url: "pages/shopping.html", head: "Shopping", picture: "", shoppable: false},
         { entry: 'Mice', url: "pages/shopitem.html", head: "Shopping > Mice", picture: "img/g502.png", shoppable: true},
         { entry: "Keyboards", url: "pages/shopitem.html", head: "Shopping > Keyboards", picture: "img/blackwid.png", shoppable: true},
-        { entry: "Headsets", url: "pages/shopitem.html", head: "Shopping > Headsets", picture: "", shoppable: true},
+        { entry: "Headsets", url: "pages/shopitem.html", head: "Shopping > Headsets", picture: "img/g430.png", shoppable: true},
         { entry: "Monitors", url: "pages/shopitem.html", head: "Shopping > Monitors", picture: "", shoppable: true}
     ];
 
@@ -31,6 +31,11 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.menuSel = function (index) {
         $scope.activePage = $scope.page[index];     
         $scope.menuShow = false;    
+    };
+    $scope.headerClick = function (activePage) {
+        if (activePage.shoppable == true) {
+            $scope.activePage = $scope.page[1];
+        };
     };
 
     $scope.activePage = $scope.page[0];
@@ -53,6 +58,15 @@ app.controller('MainController', ['$scope', function($scope) {
         { brand: "logitech", model: "g910 orion spark", picture: "img/g910.png", price: "180"},
         { brand: "logitech", model: "g710", picture: "img/g710.png", price: "130"},
         { brand: "daskeyboard", model: "g500s", picture: "img/dasSPro.png", price: "80"}
+    ];
+    $scope.Headsets = [
+        { brand: "tritton", model: "tritton pro+", picture: "img/tritton.png", price: "130"},
+        { brand: "steelseries", model: "siberia v2", picture: "img/sv2.png", price: "60"},
+        { brand: "steelseries", model: "siberia v3", picture: "img/sv3.png", price: "80"},
+        { brand: "logitech", model: "g933", picture: "img/g933.png", price: "200"},
+        { brand: "logitech", model: "g930", picture: "img/g930.png", price: "160"},
+        { brand: "logitech", model: "g430", picture: "img/g430.png", price: "80"},
+        { brand: "logitech", model: "g230", picture: "img/g230.png", price: "60"}
     ];
 }]);
 

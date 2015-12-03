@@ -56,6 +56,7 @@ a:hover { text-decoration: none;}
 .imgcontainer { height: 165px;}
 .figimg {
     width: 175px;
+    max-height: 165px;
     margin: 0 0.5em ;
 }
 .price-circle {
