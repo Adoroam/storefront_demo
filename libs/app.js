@@ -22,6 +22,7 @@ app.controller('MainController', ['$scope', function($scope) {
     ];
 
     $scope.menuShow = false;
+    $scope.menuText = false;
     $scope.menuClick = function () {
          if ($scope.menuShow) {
             $scope.menuShow = false;
