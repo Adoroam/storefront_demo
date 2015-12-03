@@ -49,6 +49,10 @@ a:hover { text-decoration: none;}
     text-align: left;
     padding-left: 1em;
 }
+.caption > h4 { 
+     position: relative;
+    top: .6em;
+}
 .imgcontainer { height: 165px;}
 .figimg {
     width: 175px;
