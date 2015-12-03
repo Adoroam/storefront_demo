@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>angular project</title>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="libs/style.css">
+        <title>storefront proof of concept</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
         <script src="libs/zero.js"></script>
         <script src="libs/app.js"></script>
-        <script src="libs/controllers/MainController.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/ado.css">
+        <link rel="stylesheet" href="libs/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Website Author" content="Anthony Stabile">
     </head>
 
-    <body ng-app="ang">
-
-        <div class="container-fluid" ng-controller="MainController">
-            <div class="row ">
-                <h2 class="heading">Angular Test Page</h2>
-                <div class="col-lg-6">
-                    <h4>Column One</h4>
-                    <p>{{ title }}</p>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Column Two</h4>
+    <body ng-app="ang" ng-controller="MainController">
+        <div class="container-fluid">
+            <!-- topbar and menu -->
+            <div class="topBar lightBg"><span class="glyphicon glyphicon-menu-hamburger whiteBg menuIcon" ng-click="menuClick();"></span></div>
+            <div class="menu lightBg">
+                <div ng-repeat="x in page | filter : {shoppable: false} : true" >
+                    <a ng-click="menuSel($index)"><h3 class="menuItem">{{ x.entry }}</h3></a>
                 </div>
             </div>
-        </div>
-
+            <!-- end menu -->
+            <img src="img/angularpoclogo2.png" class="angularLogo"/><!-- logo -->
+            <div class="row darkBg content">  
+                <h2 class="pageHead whiteTxt">{{ activePage.head }}</h2> 
+                <div class="content" ng-include='activePage.url' id="content"></div>
+            </div><!-- end row -->
+                    <!-- 
+                    <input type="button" class="blueOl darkTxt" ng-class="{blueBg: theChanger==true, whiteBg: theChanger==false}" name="theChanger" value="{{buttColor}}" ng-click="ropemaker();"> 
+                    <p>{{ thing }}</p>
+                    -->
+        </div><!-- end container-fluid -->
     </body>
 
 </html>

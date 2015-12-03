@@ -1,10 +1,85 @@
 body {
-	font-family: "raleway";	
+    font-family: "raleway"; 
 }
 a:hover {
-	text-decoration: none;
+    text-decoration: none;
 }
-.heading {
-	width: 100%;
-	text-align: center;
+div {
+
+}
+.shadow {box-shadow: 0px 0px 5px rgb(20,20,20);}
+.topBar {
+    height: 40px;
+    width: 90%;
+    float: right;
+    position: relative;
+    top: 2em;
+    z-index: -1;
+    text-align: right;
+}
+.angularLogo {
+    width: 250px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 2.5em;
+}
+.menuIcon {
+    margin: .25em .5em;
+    padding: .5em;
+    height: 2em;
+    width: 2em;
+    border-radius: 1em;
+}
+.menu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    z-index: 2;
+}
+.center {
+    text-align: center;
+}
+.content {
+    padding-bottom: 1em;
+}
+.pageHead {
+    margin: 0.5em 1em;
+}
+.figure {
+    margin: 1em 0;
+}
+.caption {
+    text-align: left;
+    padding-left: 1em;
+}
+.imgcontainer {
+    height: 165px;
+}
+.figimg {
+
+    width: 175px;
+    margin: 0 0.5em ;
+}
+.price-circle {
+    display: inline-block;
+    border-radius: 3em;
+    height: 5em;
+    width: 5em;
+    vertical-align: middle;
+}
+.price {
+    font-size: 1.25em;     
+    position: relative;
+    top: 1.25em;
+}
+.bottomButtons {
+    width: 100%;
+}
+.infoButton {
+    width: 50%;
+    border: none;
+}
+.cartButton {
+    width: 50%;
+    border:none;
 }
