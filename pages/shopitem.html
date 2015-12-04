@@ -1,12 +1,12 @@
 <div ng-repeat="x in activeShop" class="col-xs-10 col-xs-push-1 col-sm-6 col-sm-push-0 col-md-4 col-lg-3 center">
-    <figure  class="figure whiteBg shadow">
-        <figcaption class="caption"><h4 class="blueTxt">{{ x.model }}<span class='small lightTxt'> by {{ x.brand }}</span></h4> </figcaption>                       
+    <figure  class="figure darkBg shadow">
+        <figcaption class="caption"><h4 class="orangeTxt">{{ x.model }}<span class='small lightTxt'> by {{ x.brand }}</span></h4> </figcaption>                       
         <div class="imgcontainer">
             <img ng-src="{{ x.picture }}"  class="figimg"/>
-            <div class="price-circle orangeBg shadow"><p class="price whiteTxt">{{ x.price | currency }}</p></div>
+            <div class="price-circle blueBg shadow"><p class="price whiteTxt">{{ x.price | currency }}</p></div>
         </div>
         <div class="bottomButtons"><!-- form -->                            
-            <input type="button" name="info" value="more info" class="bButton whiteBg darkTxt shadow" id="info"><input type="button" name="toCart" value="add to cart" class="bButton whiteBg darkTxt shadow" id="cart">                            
+            <input type="button" name="info" value="more info" class="bButton darkBg whiteTxt shadow" id="info"><input type="button" name="toCart" value="add to cart" class="bButton darkBg whiteTxt shadow" id="cart">                            
         </div>
     </figure> 
 </div>                       

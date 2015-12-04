@@ -38,7 +38,7 @@ app.controller('MainController', ['$scope', function($scope) {
     ];
     $scope.Keyboards = [
         {   brand: "razer", model: "blackwidow", picture: "img/blackwid.png", price: "100" },
-        {   brand: "razer", model: "blacwidow chroma", picture: "img/blackwidchroma.png", price: "150" },
+        {   brand: "razer", model: "blackwidow chroma", picture: "img/blackwidchroma.png", price: "150" },
         {   brand: "logitech", model: "g910 orion spark", picture: "img/g910.png", price: "180" },
         {   brand: "logitech", model: "g710", picture: "img/g710.png", price: "130" },
         {   brand: "daskeyboard", model: "g500s", picture: "img/dasSPro.png", price: "80" }
