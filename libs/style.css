@@ -2,9 +2,15 @@ html {height: 100%;}
 body {
     font-family: "raleway";     
 }
+footer {
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+}
 a:hover { text-decoration: none;}
 .shadow { box-shadow: 0px 0px 5px rgb(0,0,0);}
 .center { text-align: center;}
+/*topbar and icon*/
 .topBar {
     height: 40px;
     width: 100%;
@@ -29,6 +35,7 @@ a:hover { text-decoration: none;}
     position: relative;
     z-index: 3;
 }
+/*menu*/
 .menuIcon {
     margin: .25em .5em;
     padding: .5em;
@@ -46,16 +53,24 @@ a:hover { text-decoration: none;}
     cursor: pointer;
 }
 .menuItem {
-    margin: 0;
+    margin: 0em;
     padding: .5em;
+    width: 100%;    
 }
+.menuItemDiv {    
+    float: left;
+    overflow: hidden;
+}
+.menuItemDiv:hover {
+    border: 1px solid #2993d1;
+    border-radius: 2px;
+    margin: -1px;
+}
+/*main content*/
 .content { 
     padding-bottom: 1em;
 }
 .pageHead { margin: 0.5em 1em;}
-.homeDiv { 
-    margin: 1em; 
-    height: 100%;}
 .figure { margin: 1em 0;}
 .caption {
     text-align: left;
@@ -67,7 +82,7 @@ a:hover { text-decoration: none;}
 }
 .imgcontainer { height: 165px;}
 .figimg {
-    width: 175px;
+    width: 170px;
     max-height: 165px;
     margin: 0 0.5em ;
 }
@@ -83,20 +98,16 @@ a:hover { text-decoration: none;}
     position: relative;
     top: 1.25em;
 }
+/*buttons in shop*/
 .bottomButtons { width: 100%;}
-.infoButton {
+.bButton {
     width: 50%;
     border: none;
 }
-.cartButton {
-    width: 50%;
-    border:none;
-}
-footer {
-    vertical-align: bottom;
-    width: 100%;
-    height: 100%;
-}
+/*homepage*/
+.homeDiv { 
+    margin: 1em; 
+    height: 100%;}
 .disclaimer {
     font-size: 10px;
 }

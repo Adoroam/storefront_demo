@@ -1,7 +1,7 @@
 var app = angular.module("ang", []);
 
 app.controller('MainController', ['$scope', function($scope) {
-   $scope.page = [
+    $scope.page = [
         {   entry: "Home", 
             url: "pages/home.html", 
             head: "Home", 
@@ -26,12 +26,7 @@ app.controller('MainController', ['$scope', function($scope) {
             url: "pages/shopitem.html", 
             head: "Shopping > Headsets", 
             picture: "img/g430.png", 
-            shoppable: true },
-        {   entry: "Monitors", 
-            url: "pages/shopitem.html", 
-            head: "Shopping > Monitors", 
-            picture: "", 
-            shoppable: true }
+            shoppable: true }       
     ];
     $scope.menuShow = false;
     $scope.menuText = false;
