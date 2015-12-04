@@ -27,7 +27,7 @@
                 </div>
             </div><!-- end menu -->
             <div class="leftCover"></div><!-- cover's left side of menu -->
-            <img src="img/angularpoclogo2.png" class="angularLogo"/><!-- logo -->
+            <img src="img/angularpoclogo2.png" class="angularLogo" ng-click="activePage=page[0];"/><!-- logo -->
             <div class="row darkBg content">  
                 <h2 class="pageHead whiteTxt" ng-click="headerClick(activePage);">{{ activePage.head }}</h2> 
                 <div class="content" ng-include='activePage.url' id="content"></div>

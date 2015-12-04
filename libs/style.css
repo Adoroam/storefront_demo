@@ -46,7 +46,8 @@ a:hover { text-decoration: none;}
     cursor: pointer;
 }
 .menu {
-    position: fixed;
+    position: absolute;
+    top: 0;
     right: 1em;   
     margin-top: 2em;
     padding-top: 3em; 
